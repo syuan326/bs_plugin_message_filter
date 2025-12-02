@@ -18,10 +18,10 @@ BotShepherd 是一个基于OneBot v11协议WebSocket代理和管理系统，统�
 
 ## 使用教程
 
-在`app/plugins/`下执行
+在`框架根目录`下执行
 
 ```bash
-git clone https://github.com/syuan326/bs_plugin_message_filter
+git clone https://github.com/syuan326/bs_plugin_message_filter.git ./app/plugins/bs_plugin_message_filterter
 ```
 
 运行一次框架后会得到一个原始json文件，可参考下一章节去配置

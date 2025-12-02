@@ -1,0 +1,2 @@
+# bs_plugin_message_filter
+基于BotShepherd的消息过滤插件

@@ -84,10 +84,6 @@ def apply_rule(
             text = f"{args}{text}"
         elif mode == "append" and args is not None:
             text = f"{text}{args}"
-        elif mode == "upper":
-            text = text.upper()
-        elif mode == "lower":
-            text = text.lower()
         data["text"] = text
 
     elif seg_type == "image":
@@ -222,7 +218,7 @@ class MessageSegmentRulesPlugin:
         processor.register_filter(
             filter_func=self.filter_send_message, direction="send", priority=45
         )
-        logger.info(f"[{self.name}] 已注册 (优先级: 45)")
+        logger.info(f"[{self.name}] 已注册")
 
 
 def setup(processor):
